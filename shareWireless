@@ -1,0 +1,4 @@
+@Script para compartilhar a rede sem fio
+netsh wlan set hostednetwork mode=allow ssid=rede01 key=qw23@2312w
+netsh wlan start hostednetwork
+exit
