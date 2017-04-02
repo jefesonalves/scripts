@@ -1,3 +1,4 @@
+#Script paa compartilhar rede sem fio em sistemas opercionais windows
 @Script para compartilhar a rede sem fio
 netsh wlan set hostednetwork mode=allow ssid=rede01 key=qw23@2312w
 netsh wlan start hostednetwork
