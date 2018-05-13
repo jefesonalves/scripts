@@ -19,7 +19,7 @@ REM solicitando e armazenando a variável com o nome do usuário
 set /p nomeusuario=Digite o login: 
 REM gerando um log no diretório abaixo
 @echo %date%%time% %nomeusuario% ErrorLevel:%errorLevel% >> %temp%\logmapear.log
-@echo senha:
+@echo Digite a senha:
 REM mapeando a unidade de rede
 net use %unidade% %caminho% /persistent:yes /user:%dominio%\%nomeusuario% > NUL
 REM abrindo a unidade mapeada para o usuário
