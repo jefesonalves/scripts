@@ -1,19 +1,20 @@
 @echo off
+chcp 65001
 REM Excluindo os mapeamentos existentes
 net use * /delete /yes
 cls
-@echo ###############################################
-@echo # Script para mapeamento de unidade de rede   #
-@echo # Desenvolvido por Jefeson Alves		    #
-@echo # e-mail: jefesonbezerra@gmail.com	    #
-@echo ###############################################
+@echo ------------------------------------------
+@echo Script para mapeamento de unidade de rede
+@echo Desenvolvido por Jefeson Alves
+@echo e-mail: jefesonbezerra@gmail.com
+@echo ------------------------------------------
 @echo.
 REM armazenando o domínio em uma varíavel
-set dominio="insira aqui o nome do domínio"
+set /p dominio=Digite o nome do domínio:
 REM armazenando o caminho UNC do servidor de arquivos
-set caminho="insira aqui o caminho UNC do servidor de arquivos"
+set /p caminho=Digite o caminho UNC:
 REM armazenando a unidade que será utilizada para mapeamento
-set unidade="insira aqui a letra da unidade de rede de sua preferência"
+set /p unidade=Digite a letra da unidade:
 REM solicitando e armazenando a variável com o nome do usuário
 set /p nomeusuario=Digite o login: 
 REM gerando um log no diretório abaixo
