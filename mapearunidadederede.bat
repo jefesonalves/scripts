@@ -1,6 +1,6 @@
 @echo off
-REM Excluindo o mapeamento Z existente
-net use z: /delete /yes
+REM Excluindo os mapeamentos existentes
+net use * /delete /yes
 cls
 @echo ###############################################
 @echo # Script para mapeamento de unidade de rede   #
