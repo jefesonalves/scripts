@@ -3,11 +3,11 @@ chcp 65001
 REM Excluindo os mapeamentos existentes
 net use * /delete /yes
 cls
-@echo ------------------------------------------
+@echo -------------------------------------------
 @echo Script para mapeamento de unidade de rede
 @echo Desenvolvido por Jefeson Alves
 @echo e-mail: jefesonbezerra@gmail.com
-@echo ------------------------------------------
+@echo -------------------------------------------
 @echo.
 REM armazenando o domínio em uma varíavel
 set /p dominio=Digite o nome do domínio:
